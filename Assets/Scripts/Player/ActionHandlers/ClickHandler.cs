@@ -1,5 +1,5 @@
 using System;
-using Camera;
+using CameraControl;
 using UnityEngine;
 using Utils.Singleton;
 

@@ -1,12 +1,13 @@
+using Levels;
 using UnityEngine;
 using Utils.Singleton;
 
-namespace Camera
+namespace CameraControl
 {
     public class CameraHolder : DontDestroyMonoBehaviourSingleton<CameraHolder>
     {
-        [SerializeField] private UnityEngine.Camera mainCamera;
-        
-        public UnityEngine.Camera MainCamera => mainCamera;
+        [SerializeField] private Camera mainCamera;
+
+        public Camera MainCamera => mainCamera;       
     }
 }

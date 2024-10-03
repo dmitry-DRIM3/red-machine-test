@@ -27,12 +27,21 @@ namespace Connection
 
         private void OnColorChanged(Color currentColor)
         {
-            TargetCompletionChangeEvent?.Invoke(this, targetColor == currentColor);
+            Debug.Log(AreColorsEqual(currentColor, targetColor));
+            TargetCompletionChangeEvent?.Invoke(this, AreColorsEqual(currentColor, targetColor));
         }
 
         private void OnValidate()
         {
             spriteRenderer.color = targetColor;
+        }
+
+        private bool AreColorsEqual(Color c1, Color c2)
+        {
+            return Mathf.Round(c1.r * 255) == Mathf.Round(c2.r * 255) &&
+                   Mathf.Round(c1.g * 255) == Mathf.Round(c2.g * 255) &&
+                   Mathf.Round(c1.b * 255) == Mathf.Round(c2.b * 255) &&
+                   Mathf.Round(c1.a * 255) == Mathf.Round(c2.a * 255);
         }
     }
 }

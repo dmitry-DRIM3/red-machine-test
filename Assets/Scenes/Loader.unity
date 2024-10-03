@@ -199,6 +199,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   activityType: 1
+  levelSettings:
+  - {fileID: 11400000, guid: 1b7b1535557592344b7fa181b5a2c23a, type: 2}
+  - {fileID: 11400000, guid: 3c5226671af1d804688afc54e29a6f69, type: 2}
+  - {fileID: 11400000, guid: 57e87268416b51f46b6ca74f03ada1a1, type: 2}
+  - {fileID: 11400000, guid: aa880b2f65088fd4dabbeb849c4dcebf, type: 2}
+  - {fileID: 11400000, guid: c6ae479fdad5601408112d0b49fadf6c, type: 2}
+  - {fileID: 11400000, guid: ab997cb15d8e1b640bbceb28bef09f66, type: 2}
+  - {fileID: 11400000, guid: 9bb235d18c93aba47bfc79d8b0adb052, type: 2}
+  - {fileID: 11400000, guid: d7a35eb9c8ca7604e92dbf545fb5cc60, type: 2}
+  - {fileID: 11400000, guid: d7a99cb16f05c334a9efd3042ba62d5a, type: 2}
+  - {fileID: 11400000, guid: 669d7b9ae5b89574a8b761797f2ef558, type: 2}
 --- !u!4 &1307544591
 Transform:
   m_ObjectHideFlags: 0
@@ -272,6 +283,7 @@ GameObject:
   - component: {fileID: 2040505402}
   - component: {fileID: 2040505405}
   - component: {fileID: 2040505406}
+  - component: {fileID: 2040505407}
   m_Layer: 0
   m_Name: MainCamera
   m_TagString: MainCamera
@@ -392,3 +404,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   activityType: 1
   mainCamera: {fileID: 2040505403}
+--- !u!114 &2040505407
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2040505401}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2863909091ece284787ca2dd7e758439, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activityType: 1
+  swipeSpeed: 100
+  smoothSpeed: 0.75
